@@ -1,0 +1,9 @@
+<div id="wrapper">
+    <h1>My Thoughts</h1>
+    <button>New Thought</button>
+    <section>
+        <div *ngFor="let post of posts" class="post">
+            <app-post [post]="post" (deleted)="onDelete($event)"></app-post>
+        </div>
+    </section>
+</div>

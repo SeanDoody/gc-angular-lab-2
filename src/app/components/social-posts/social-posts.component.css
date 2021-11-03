@@ -1,0 +1,38 @@
+h1 {
+    font-family: 'Homemade Apple', cursive;
+    color: rgb(3, 169, 244);
+    margin-bottom: 1rem;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    width: 50rem;
+    height: 3rem;
+    background-color: #fff;
+    border-radius: 0.7rem;
+    margin-bottom: 1rem;
+    border: solid 0.2rem #000;
+    cursor: pointer;
+}
+
+section {
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 0.7rem;
+    border: solid 0.2rem #000;
+}
+
+.post {
+    width: 45rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-bottom: solid 0.2rem #F3F1F7;
+}
