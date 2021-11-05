@@ -9,9 +9,9 @@ import { Post } from 'src/app/models/post';
 export class SocialPostsComponent implements OnInit {
 
   posts: Post[] = [
-    { title: "Sean Doody", thought: "This shit is hard, but I'm slowly gettting it!" },
-    { title: "Sean Doody", thought: "I'm so sick of my goddamn foot" },
-    { title: "Sean Doody", thought: "I can't wait to get drunk on fireball and apple cider and play some Minecraft!" }
+    { title: "Event Binding", thought: "This shit is hard, but I'm slowly gettting it!" },
+    { title: "Foot Pain", thought: "I'm so sick of my goddamn foot" },
+    { title: "Addiction Issues", thought: "I can't wait to get drunk on fireball and apple cider and play some Minecraft!" }
   ];
 
   constructor() { }
@@ -19,8 +19,8 @@ export class SocialPostsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit(): void {
-
+  onSubmit(newPost: Post): void {
+    this.posts.push(newPost);
   }
 
   onDelete(deletedPost: Post): void {
