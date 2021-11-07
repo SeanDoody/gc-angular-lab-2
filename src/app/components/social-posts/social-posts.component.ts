@@ -8,11 +8,19 @@ import { Post } from 'src/app/models/post';
 })
 export class SocialPostsComponent implements OnInit {
 
+  showPostForm: boolean = false;
+
   posts: Post[] = [
-    { title: "Event Binding", thought: "This shit is hard, but I'm slowly gettting it!" },
-    { title: "Foot Pain", thought: "I'm so sick of my goddamn foot" },
-    { title: "Addiction Issues", thought: "I can't wait to get drunk on fireball and apple cider and play some Minecraft!" }
+    { title: "Fall", thought: "Fall is the best season of the year! The cooler weather is great and the colors are beautiful." },
+    { title: "Grand Circus", thought: "Grand Circus did a great job teaching me the fundamentals of Angular!" },
+    { title: "Job Search", thought: "I can't wait to find a new job as an Angular developer!" }
   ];
+
+  newThought(): void {
+    if (!this.showPostForm) {
+      this.showPostForm = true;
+    }
+  }
 
   constructor() { }
 
@@ -21,6 +29,7 @@ export class SocialPostsComponent implements OnInit {
 
   onSubmit(newPost: Post): void {
     this.posts.push(newPost);
+    this.showPostForm = false;
   }
 
   onDelete(deletedPost: Post): void {

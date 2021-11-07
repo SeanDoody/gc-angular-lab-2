@@ -1,7 +1,8 @@
 h1 {
     font-family: 'Homemade Apple', cursive;
     color: rgb(3, 169, 244);
-    margin-bottom: 1rem;
+    margin-bottom: 1rem;;
+    font-size: 2.5rem;
 }
 
 #wrapper {
@@ -11,17 +12,18 @@ h1 {
 }
 
 button {
-    width: 50rem;
+    width: 70%;;
     height: 3rem;
     background-color: #fff;
     border-radius: 0.7rem;
     margin-bottom: 1rem;
     border: solid 0.2rem #000;
     cursor: pointer;
+    font-size: 1.2rem;
 }
 
 section {
-    width: 50rem;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,8 +33,18 @@ section {
 }
 
 .post {
-    width: 45rem;
+    width: 90%;
     background-color: #fff;
     padding: 1rem;
     border-bottom: solid 0.2rem #F3F1F7;
+}
+
+#fade {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 70%;
 }
