@@ -1,9 +1,14 @@
 <div id="post-form">
     <form (submit)="submitPost()">
         <label for="title">Title</label>
-        <input [(ngModel)]="newTitle" type="text" name="title" id="title">
+        <input [(ngModel)]="newTitle" type="text" name="title" id="title" />
         <label for="thought">Thought</label>
-        <input [(ngModel)]="newThought" type="text" name="thought" id="thought">
+        <input
+            [(ngModel)]="newThought"
+            type="text"
+            name="thought"
+            id="thought"
+        />
         <button>Add Post</button>
     </form>
 </div>

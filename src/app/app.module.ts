@@ -8,17 +8,17 @@ import { PostComponent } from './components/post/post.component';
 import { PostFormComponent } from './components/post-form/post-form.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SocialPostsComponent,
-    PostComponent,
-    PostFormComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        SocialPostsComponent,
+        PostComponent,
+        PostFormComponent
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

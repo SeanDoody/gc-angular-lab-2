@@ -8,4 +8,7 @@
     </section>
 </div>
 <div *ngIf="showPostForm" id="fade"></div>
-<app-post-form *ngIf="showPostForm" (submitted)="onSubmit($event)"></app-post-form>
+<app-post-form
+    *ngIf="showPostForm"
+    (submitted)="onSubmit($event)"
+></app-post-form>
