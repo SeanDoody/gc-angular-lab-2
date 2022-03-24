@@ -1,7 +1,7 @@
 <div id="wrapper">
     <h1>My Thoughts</h1>
     <button (click)="newThought()">New Thought</button>
-    <section>
+    <section *ngIf="posts.length > 0">
         <div *ngFor="let post of posts" class="post">
             <app-post [post]="post" (deleted)="onDelete($event)"></app-post>
         </div>
